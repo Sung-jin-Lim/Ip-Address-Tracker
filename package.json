@@ -1,0 +1,24 @@
+{
+  "name": "ip-address-tracker",
+  "version": "1.0.0",
+  "description": "![Design preview for the IP address tracker coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suspiciouscouch/Ip-Address-Tracker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suspiciouscouch/Ip-Address-Tracker/issues"
+  },
+  "homepage": "https://github.com/suspiciouscouch/Ip-Address-Tracker#readme",
+  "dependencies": {
+    "ipapi.co": "^0.3.0",
+    "tailwindcss": "^3.0.7"
+  }
+}

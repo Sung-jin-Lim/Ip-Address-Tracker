@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+
+    <link href="../css/style.css" rel="stylesheet" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <title>Ip Addres tracker</title>
+  </head>
+  <body class="font-rubic bg-green-400">
+    <div class="container">
+      <h3>IP Address Tracker</h3>
+      <form>
+        <input type="text" placeholder="Seach for any IP address or domain" />
+        <button type="submit" class="">Submit</button>
+      </form>
+      <div id="info">
+        <div class="one">
+          <p>IP ADDRESS</p>
+          <h4>2222.333.22</h4>
+        </div>
+        <div class="two">
+          <p>LOCATION</p>
+          <h4>Lorem ipsum dolor sit.</h4>
+        </div>
+
+        <div class="three">
+          <p>TIMEZONE</p>
+          <h4>Lorem, ipsum dolor. lorem30</h4>
+        </div>
+
+        <div class="four">
+          <p>ISP</p>
+          <h4>Lorem, ipsum dolor.</h4>
+        </div>
+      </div>
+    </div>
+
+    <div id="map"></div>
+
+    <script src="index.js"></script>
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+$veryDarkGray: hsl(0, 0%, 17%);
+$darkGray: hsl(0, 0%, 59%);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  height: 100vh;
+  font-size: 18px;
+}
+.container {
+  padding-top: 1rem;
+  display: flex;
+  height: 35vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(/images/pattern-bg.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+}
+
+h3 {
+  color: white;
+  font-weight: 500;
+  font-size: 2rem;
+}
+form {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  box-sizing: border-box;
+
+  input {
+    width: 35vw;
+    padding: 1rem 1rem;
+    box-sizing: border-box;
+  }
+}
+#info {
+  position: relative;
+  top: 3rem;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  justify-content: unset;
+  align-items: unset;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  max-width: 70vw;
+}
+
+p {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: $darkGray;
+}
+
+.one,
+.two,
+.three,
+.four {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+#map {
+  height: 65vh;
+  background-color: $veryDarkGray;
+}
