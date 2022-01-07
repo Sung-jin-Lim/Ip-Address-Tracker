@@ -34,35 +34,39 @@
   <body class="font-rubic bg-green-400">
     <div class="container">
       <h3>IP Address Tracker</h3>
-      <form>
-        <input type="text" placeholder="Seach for any IP address or domain" />
-        <button type="submit" class="">Submit</button>
-      </form>
+      <div class="form">
+        <input
+          type="text"
+          placeholder="Seach for any IP address or domain"
+          id="input"
+        />
+        <button type="submit" id="submit">Submit</button>
+      </div>
       <div id="info">
         <div class="one">
           <p>IP ADDRESS</p>
-          <h4>2222.333.22</h4>
+          <h4 class="ip" name="ip"></h4>
         </div>
         <div class="two">
           <p>LOCATION</p>
-          <h4>Lorem ipsum dolor sit.</h4>
+          <h4 class="location" name="location">Lorem ipsum dolor sit.</h4>
         </div>
 
         <div class="three">
           <p>TIMEZONE</p>
-          <h4>Lorem, ipsum dolor. lorem30</h4>
+          <h4 class="time">Lorem, ipsum dolor. lorem30</h4>
         </div>
 
         <div class="four">
           <p>ISP</p>
-          <h4>Lorem, ipsum dolor.</h4>
+          <h4 class="isp">Lorem, ipsum dolor.</h4>
         </div>
       </div>
     </div>
 
     <div id="map"></div>
 
-    <script src="index.js"></script>
+    <script defer src="app.js"></script>
     <script
       src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
       integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
