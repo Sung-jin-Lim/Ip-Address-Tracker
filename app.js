@@ -16,7 +16,8 @@ const getData = async () => {
     ipAddress.innerHTML = data.ip;
     loc.innerHTML = data.city + ", " + data.country;
     timeZone.innerHTML = data.timezone;
-    isp.innerHTML = data.org;
+    isp.innerHTML = data.org.slice(7, data.org.length);
+
     latLong = data.loc.split(",");
     // map settings
     lat = latLong[0];
