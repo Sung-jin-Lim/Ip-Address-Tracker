@@ -1,4 +1,4 @@
-const url = "http://ip-api.com/json/?fields=61439";
+const url = "https://ipinfo.io/103.43.77.41?token=0dad6273a6a035";
 const input = document.querySelector("#input").value;
 const button = document.querySelector("#submit");
 let ipAddress = document.querySelector(".ip");
@@ -13,15 +13,14 @@ const getData = async () => {
   try {
     let response = await fetch(url);
     let data = await response.json();
-    if (data.status === "success") {
-      ipAddress.innerHTML = data.query;
-      loc.innerHTML = data.city + ", " + data.country;
-      timeZone.innerHTML = data.timezone;
-      isp.innerHTML = data.isp;
-    }
+    ipAddress.innerHTML = data.ip;
+    loc.innerHTML = data.city + ", " + data.country;
+    timeZone.innerHTML = data.timezone;
+    isp.innerHTML = data.org;
+    latLong = data.loc.split(",");
     // map settings
-    lat = data.lat;
-    long = data.lon;
+    lat = latLong[0];
+    long = latLong[1];
 
     createMap();
   } catch (error) {
@@ -34,31 +33,25 @@ getData();
 button.addEventListener("click", async () => {
   try {
     let ip = document.querySelector("#input").value;
-    const url2 = `http://ip-api.com/json/${ip}?fields=61439`;
+    const url2 = `https://ipinfo.io/${ip}?token=0dad6273a6a035`;
     let response = await fetch(url2);
     let data = await response.json();
 
-    if (data.status === "success") {
-      ipAddress.innerHTML = data.query;
-      loc.innerHTML = data.city + ", " + data.country;
-      timeZone.innerHTML = data.timezone;
-      isp.innerHTML = data.isp;
+    ipAddress.innerHTML = data.ip;
+    loc.innerHTML = data.city + ", " + data.country;
+    timeZone.innerHTML = data.timezone;
+    isp.innerHTML = data.org;
+    latLong = data.loc.split(",");
+    // map change
+    lat = latLong[0];
+    long = latLong[1];
 
-      // map change
-      lat = data.lat;
-      long = data.lon;
-      console.log("lat: ", lat + " long: " + long);
-      createMap();
-    } else throw new Error();
+    createMap();
   } catch (error) {
     console.log(error);
     // alert(`Please enter a valid ip address`);
   }
 });
-
-function updateMap() {
-  L.map("map").setView([lat, long], 13);
-}
 
 function createMap() {
   map.setView([lat, long], 13);
