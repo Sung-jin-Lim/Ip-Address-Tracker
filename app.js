@@ -1,4 +1,4 @@
-const url = "https://ipinfo.io/103.43.77.41?token=0dad6273a6a035";
+const url = "https://ipinfo.io/token=0dad6273a6a035";
 const input = document.querySelector("#input").value;
 const button = document.querySelector("#submit");
 let ipAddress = document.querySelector(".ip");
