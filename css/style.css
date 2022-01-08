@@ -82,4 +82,9 @@ p {
   z-index: 0;
   height: 65vh;
   background-color: #2b2b2b;
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup.tip {
+  background-color: #000;
 }/*# sourceMappingURL=style.css.map */

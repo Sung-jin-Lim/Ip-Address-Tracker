@@ -83,3 +83,9 @@ p {
   height: 65vh;
   background-color: $veryDarkGray;
 }
+
+// leaflet popup
+.leaflet-popup-content-wrapper,
+.leaflet-popup.tip {
+  background-color: #000;
+}
