@@ -1,32 +1,37 @@
 @media only screen and (max-width: 768px) {
-  body{
-    height:auto;
-    width: 100%;
-
-    .container{
-    
-    height:auto;
-    width: 100%;
-    padding: 2rem 0 0 0  ;
-
-
-    .form{
+  body {
+    .container {
+      height: 50%;
       width: 100%;
-      padding: 0;
+      padding: 2rem 2rem 0rem 2rem;
+      justify-content: flex-start;
+      .form {
+        width: 100%;
+      }
+      box-sizing: border-box;
+    }
+
+    #input {
+      width: 100%;
+      min-width: 0;
+      max-width: none;
+      box-sizing: border-box;
+    }
+
+    #info {
+      flex-direction: column;
+      box-sizing: border-box;
+      text-align: center;
+      width: 100%;
+      padding: 2rem 1rem;
+      min-width: 0;
+      max-width: 100%;
+      font-size: 1.3rem;
+      min-height: fit-content;
+    }
+
+    #map {
+      height: 90vh;
     }
   }
-
-  #input{
-    width: 100%;
-
-  }
-
-  #info{
-    width: 80%;
-    min-width: 0;
-    max-width: 100%;
-  }
-  }
-  
-
 }

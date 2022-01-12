@@ -7,7 +7,7 @@ let timeZone = document.querySelector(".time");
 let isp = document.querySelector(".isp");
 let lat = "";
 let long = "";
-var map = L.map("map").setView([lat, long], 13);
+var map = L.map("map", { zoomControl: false }).setView([lat, long], 13);
 
 const getData = async () => {
   try {

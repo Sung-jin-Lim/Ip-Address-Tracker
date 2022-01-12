@@ -1,24 +1,35 @@
 @media only screen and (max-width: 768px) {
-  body {
-    height: auto;
-    width: 100%;
-  }
   body .container {
-    height: auto;
+    height: 50%;
     width: 100%;
-    padding: 2rem 0 0 0;
+    padding: 2rem 2rem 0rem 2rem;
+    justify-content: flex-start;
+    box-sizing: border-box;
   }
   body .container .form {
     width: 100%;
-    padding: 0;
   }
   body #input {
     width: 100%;
+    min-width: 0;
+    max-width: none;
+    box-sizing: border-box;
   }
   body #info {
-    width: 80%;
+    flex-direction: column;
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    padding: 2rem 1rem;
     min-width: 0;
     max-width: 100%;
+    font-size: 1.3rem;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+  }
+  body #map {
+    height: 90vh;
   }
 }
 * {
@@ -30,7 +41,6 @@ body {
   font-family: "Rubik", sans-serif;
   height: 100vh;
   font-size: 18px;
-  overflow: hidden;
 }
 
 .container {
