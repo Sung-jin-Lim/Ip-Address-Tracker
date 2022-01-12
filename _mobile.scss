@@ -1,0 +1,32 @@
+@media only screen and (max-width: 768px) {
+  body{
+    height:auto;
+    width: 100%;
+
+    .container{
+    
+    height:auto;
+    width: 100%;
+    padding: 2rem 0 0 0  ;
+
+
+    .form{
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  #input{
+    width: 100%;
+
+  }
+
+  #info{
+    width: 80%;
+    min-width: 0;
+    max-width: 100%;
+  }
+  }
+  
+
+}
