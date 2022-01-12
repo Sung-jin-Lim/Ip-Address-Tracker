@@ -54,7 +54,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: url(../images/pattern-bg.png);
+  background-image: url("../images/pattern-bg.png");
   width: 100%;
   background-size: cover;
 }
@@ -149,4 +149,4 @@ p {
 .leaflet-popup-content-wrapper,
 .leaflet-popup.tip {
   background-color: #000;
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
